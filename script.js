@@ -169,7 +169,7 @@ function startEpochMonitor() {
     epochDisplay.innerHTML = `
       <div style="font-size: 0.6rem; color: var(--neon-purple);">CORE_TIME_STABILITY: 64-BIT_ARMED</div>
       <div style="letter-spacing: 2px;">
-          Coordinated Universal Time (UTC)_REMAINING: <span style="color:white">${remaining.toLocaleString()}</span> SEC
+          Coordinated Universal Time (UTC) REMAINING: <span style="color:white">${remaining.toLocaleString()}</span> SEC
       </div>
       <div class="stability-bar">
           <div class="fill" style="width: ${(remaining / y2k38Limit) * 100}%;"></div>
