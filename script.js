@@ -150,7 +150,7 @@ async function initiateProtocol(pkgName, targetUrl) {
   }, 800);
 }
 
-// Display remaining UNIX epoch count down with a stability bar
+// Display remaining Coordinated Universal Time (UTC) count down with a stability bar
 function startEpochMonitor() {
   const container = document.querySelector('.hologram-container');
   if (!container) return;
@@ -159,7 +159,7 @@ function startEpochMonitor() {
   epochDisplay.id = 'epoch-stabilizer';
   container.prepend(epochDisplay);
 
-  // Maximum signed 32-bit integer UNIX time (Y2K38 problem)
+  // Maximum signed 32-bit integer Coordinated Universal Time (UTC) (Y2K38 problem)
   const y2k38Limit = 2147483647;
 
   setInterval(() => {
@@ -169,7 +169,7 @@ function startEpochMonitor() {
     epochDisplay.innerHTML = `
       <div style="font-size: 0.6rem; color: var(--neon-purple);">CORE_TIME_STABILITY: 64-BIT_ARMED</div>
       <div style="letter-spacing: 2px;">
-          UNIX_EPOCH_REMAINING: <span style="color:white">${remaining.toLocaleString()}</span> SEC
+          Coordinated Universal Time (UTC)_REMAINING: <span style="color:white">${remaining.toLocaleString()}</span> SEC
       </div>
       <div class="stability-bar">
           <div class="fill" style="width: ${(remaining / y2k38Limit) * 100}%;"></div>
