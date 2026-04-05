@@ -77,7 +77,7 @@ const packages = [
   name: "6G Home Internet",
   type: "6G",
   speed: "1 Gbps",
-  price: "$99.99/mo",
+  price: "$00.00./mo",
   description: "Ultra-fast next-generation fixed wireless internet for home use.",
   link: "https://exampleisp.com/6g-home"
 }
