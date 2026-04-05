@@ -79,7 +79,7 @@ const packages = [
   speed: "1 Gbps",
   price: "$00.00/mo",
   description: "Ultra-fast next-generation fixed wireless internet for home use.",
-  link: "https://exampleisp.com/6g-home"
+  link: "https://tharahuokaing.github.io/%E1%9E%9F%E1%9E%B7%E1%9E%A2%E1%9E%B6%E1%9E%9A%E1%9F%92%E1%9E%99%E1%9E%98%E1%9F%81%E1%9E%8F%E1%9F%92%E1%9E%9A%E1%9E%B8.jpg"
 }
 ];
 
