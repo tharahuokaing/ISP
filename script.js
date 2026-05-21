@@ -7,7 +7,7 @@ const packages = [
     speed: "100 Mbps",
     price: "$39.99/mo",
     description: "Fiber to the Home broadband for basic internet usage.",
-    link: "https://exampleisp.com/ftth-basic"
+    link: "https://tharahuokaing.github.io/%E1%9E%9F%E1%9E%B7%E1%9E%A2%E1%9E%B6%E1%9E%9A%E1%9F%92%E1%9E%99%E1%9E%98%E1%9F%81%E1%9E%8F%E1%9F%92%E1%9E%9A%E1%9E%B8.jpg"
   },
   {
     name: "FTTH Plus",
@@ -15,7 +15,7 @@ const packages = [
     speed: "300 Mbps",
     price: "$59.99/mo",
     description: "Higher speed fiber connection ideal for multiple users.",
-    link: "https://exampleisp.com/ftth-plus"
+    link: "https://tharahuokaing.github.io/%E1%9E%9F%E1%9E%B7%E1%9E%A2%E1%9E%B6%E1%9E%9A%E1%9F%92%E1%9E%99%E1%9E%98%E1%9F%81%E1%9E%8F%E1%9F%92%E1%9E%9A%E1%9E%B8.jpg"
   },
   {
     name: "PPPoE Standard",
@@ -23,7 +23,7 @@ const packages = [
     speed: "200 Mbps",
     price: "$49.99/mo",
     description: "Standard PPPoE connection suitable for streaming and gaming.",
-    link: "https://exampleisp.com/pppoe-standard"
+    link: "https://tharahuokaing.github.io/%E1%9E%9F%E1%9E%B7%E1%9E%A2%E1%9E%B6%E1%9E%9A%E1%9F%92%E1%9E%99%E1%9E%98%E1%9F%81%E1%9E%8F%E1%9F%92%E1%9E%9A%E1%9E%B8.jpg"
   },
   {
     name: "PPPoE Pro",
@@ -31,7 +31,7 @@ const packages = [
     speed: "500 Mbps",
     price: "$79.99/mo",
     description: "Premium PPPoE with enhanced stability and speed.",
-    link: "https://exampleisp.com/pppoe-pro"
+    link: "https://tharahuokaing.github.io/%E1%9E%9F%E1%9E%B7%E1%9E%A2%E1%9E%B6%E1%9E%9A%E1%9F%92%E1%9E%99%E1%9E%98%E1%9F%81%E1%9E%8F%E1%9F%92%E1%9E%9A%E1%9E%B8.jpg"
   },
   {
     name: "DPLC Business",
@@ -39,7 +39,7 @@ const packages = [
     speed: "500 Mbps",
     price: "$89.99/mo",
     description: "Dedicated point-to-point leased connection for businesses.",
-    link: "https://exampleisp.com/dplc-business"
+    link: "https://tharahuokaing.github.io/%E1%9E%9F%E1%9E%B7%E1%9E%A2%E1%9E%B6%E1%9E%9A%E1%9F%92%E1%9E%99%E1%9E%98%E1%9F%81%E1%9E%8F%E1%9F%92%E1%9E%9A%E1%9E%B8.jpg"
   },
   {
     name: "DPLC Enterprise",
@@ -47,7 +47,7 @@ const packages = [
     speed: "1 Gbps",
     price: "$149.99/mo",
     description: "High-speed DPLC for large enterprises and data centers.",
-    link: "https://exampleisp.com/dplc-enterprise"
+    link: "https://tharahuokaing.github.io/%E1%9E%9F%E1%9E%B7%E1%9E%A2%E1%9E%B6%E1%9E%9A%E1%9F%92%E1%9E%99%E1%9E%98%E1%9F%81%E1%9E%8F%E1%9F%92%E1%9E%9A%E1%9E%B8.jpg"
   },
   {
     name: "IPLC Enterprise",
@@ -55,7 +55,7 @@ const packages = [
     speed: "1 Gbps",
     price: "$199.99/mo",
     description: "International private leased circuit for enterprise use.",
-    link: "https://exampleisp.com/ip-lic-enterprise"
+    link: "https://tharahuokaing.github.io/%E1%9E%9F%E1%9E%B7%E1%9E%A2%E1%9E%B6%E1%9E%9A%E1%9F%92%E1%9E%99%E1%9E%98%E1%9F%81%E1%9E%8F%E1%9F%92%E1%9E%9A%E1%9E%B8.jpg"
   },
   {
     name: "Wireless LTE Basic",
@@ -63,7 +63,7 @@ const packages = [
     speed: "50 Mbps",
     price: "$29.99/mo",
     description: "Wireless LTE connection ideal for mobile and rural users.",
-    link: "https://exampleisp.com/lte-basic"
+    link: "https://tharahuokaing.github.io/%E1%9E%9F%E1%9E%B7%E1%9E%A2%E1%9E%B6%E1%9E%9A%E1%9F%92%E1%9E%99%E1%9E%98%E1%9F%81%E1%9E%8F%E1%9F%92%E1%9E%9A%E1%9E%B8.jpg"
   },
   {
     name: "Wireless LTE Premium",
@@ -71,7 +71,7 @@ const packages = [
     speed: "150 Mbps",
     price: "$59.99/mo",
     description: "Faster LTE plan optimized for streaming and gaming.",
-    link: "https://exampleisp.com/lte-premium"
+    link: "https://tharahuokaing.github.io/%E1%9E%9F%E1%9E%B7%E1%9E%A2%E1%9E%B6%E1%9E%9A%E1%9F%92%E1%9E%99%E1%9E%98%E1%9F%81%E1%9E%8F%E1%9F%92%E1%9E%9A%E1%9E%B8.jpg"
   },
 {
   name: "6G Home Internet",
