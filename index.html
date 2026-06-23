@@ -1,346 +1,198 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>HUOKAING THARA | Future ISP</title>
-
-<meta name="description" content="HUOKAING THARA Future ISP Satellite Interface">
-<meta name="author" content="Thara Huokaing">
-<meta name="keywords" content="ISP, Satellite Internet, Phnom Penh, Cambodia">
-<meta name="theme-color" content="#0a0a0a">
-<meta name="color-scheme" content="dark">
-
-<link rel="preconnect" href="https://www.google.com">
-<link rel="preconnect" href="https://www.gstatic.com" crossorigin>
-
-<link rel="stylesheet" href="styles.css">
-
-<meta http-equiv="Content-Security-Policy"
-content="
-default-src 'self';
-script-src 'self' https://www.google.com https://www.gstatic.com;
-style-src 'self' 'unsafe-inline';
-img-src 'self' data:;
-frame-src https://www.google.com;
-connect-src 'self';
-">
-
-<script
-src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
-async
-defer>
-</script>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HUOKAING THARA - Future ISP Satellite Interface">
+    <meta name="author" content="Thara Huokaing">
+    <meta name="keywords" content="ISP, Satellite, Internet, Future Technology, Phnom Penh">
+    
+    <!-- Preconnect to important origins -->
+    <link rel="preconnect" href="https://www.google.com">
+    
+    <title>HUOKAING THARA | Future ISP</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Load Google Recaptcha asynchronously -->
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
 </head>
-
 <body>
-
-<!-- SECURITY OVERLAY -->
-
-<div
-id="security-layer"
-class="security-overlay"
-role="dialog"
-aria-modal="true"
-aria-labelledby="security-title">
-
-<div class="security-content">
-
-<h2 id="security-title">
-🔒 Neural Handshake Required
-</h2>
-
-<p class="security-description">
-Verify your identity to access the satellite network.
-</p>
-
-<div id="recaptcha-container"></div>
-
-<div id="verification-status" aria-live="polite"></div>
-
-</div>
-</div>
-
-<!-- MAIN INTERFACE -->
-
-<div
-id="main-interface"
-class="hologram-container"
-aria-hidden="true">
-
-<header class="main-header">
-
-<h1 class="glitch"
-data-text="HUOKAING THARA">
-HUOKAING THARA
-</h1>
-
-<p class="subtitle">
-<span class="status-indicator">◈</span>
-SATELLITE INTERFACE:
-<strong>ACTIVE</strong>
-</p>
-
-</header>
-
-<section
-id="package-grid"
-class="package-section"
-aria-labelledby="package-title">
-
-<h2 id="package-title">
-Available Service Packages
-</h2>
-
-<div
-id="packages-container"
-class="packages-container">
-
-<div
-class="package-card loading"
-role="status"
-aria-live="polite">
-
-<div class="loading-animation">
-<span class="loading-dot"></span>
-<span class="loading-dot"></span>
-<span class="loading-dot"></span>
-</div>
-
-<p>Loading packages...</p>
-
-</div>
-
-</div>
-
-</section>
-
-<section
-class="bank-panel"
-aria-labelledby="bank-title">
-
-<h3 id="bank-title">
-
-<span class="icon">🛰️</span>
-
-IP SATELLITE BANK
-
-</h3>
-
-<div
-id="ip-display"
-class="ip-coordinates"
-aria-live="polite">
-
-<span class="coordinate-label">
-COORDINATING...
-</span>
-
-<span class="coordinate-value"></span>
-
-</div>
-
-<div id="bank-stats" class="bank-stats">
-
-<div class="stat-item">
-<span class="stat-label">Active Nodes</span>
-<span id="active-nodes" class="stat-value">0</span>
-</div>
-
-<div class="stat-item">
-<span class="stat-label">Bandwidth</span>
-<span id="total-bandwidth" class="stat-value">0 GB/s</span>
-</div>
-
-<div class="stat-item">
-<span class="stat-label">Status</span>
-<span id="system-status"
-class="stat-value status-online">
-ONLINE
-</span>
-</div>
-
-</div>
-
-</section>
-
-<footer class="main-footer">
-
-<p>
-© 2026 HUOKAING THARA | Future ISP
-</p>
-
-<p class="location">
-📍 Phnom Penh, Cambodia
-</p>
-
-<nav class="footer-links">
-
-<a href="/terms.html" class="footer-link">
-Terms
-</a>
-
-<a href="/privacy.html" class="footer-link">
-Privacy
-</a>
-
-<a href="/support.html" class="footer-link">
-Support
-</a>
-
-</nav>
-
-</footer>
-
-</div>
-
-<script src="script.js"></script>
-
-<script>
-'use strict';
-
-const securityState = {
-verified: false,
-timestamp: null
-};
-
-window.onloadCallback = function () {
-
-if (!window.grecaptcha) {
-console.error('reCAPTCHA failed to load');
-return;
-}
-
-grecaptcha.render('recaptcha-container', {
-sitekey: 'YOUR_SITE_KEY_HERE',
-callback: handleVerification,
-'theme': 'dark'
-});
-
-};
-
-async function handleVerification(token) {
-
-const status =
-document.getElementById(
-'verification-status'
-);
-
-status.textContent =
-'Verifying access...';
-
-try {
-
-const response =
-await fetch(
-'/api/verify-recaptcha',
-{
-method: 'POST',
-credentials: 'same-origin',
-headers: {
-'Content-Type':
-'application/json',
-'X-Requested-With':
-'XMLHttpRequest'
-},
-body: JSON.stringify({
-token
-})
-}
-);
-
-const result =
-await response.json();
-
-if (result.success) {
-
-securityState.verified =
-true;
-
-securityState.timestamp =
-new Date().toISOString();
-
-status.textContent =
-'Access granted';
-
-unlockInterface();
-
-} else {
-
-status.textContent =
-'Verification failed';
-
-}
-
-} catch (error) {
-
-console.error(error);
-
-status.textContent =
-'Network error';
-
-}
-
-}
-
-function unlockInterface() {
-
-const securityLayer =
-document.getElementById(
-'security-layer'
-);
-
-const mainInterface =
-document.getElementById(
-'main-interface'
-);
-
-securityLayer.animate(
-[
-{ opacity: 1 },
-{ opacity: 0 }
-],
-{
-duration: 600,
-easing: 'ease-out'
-}
-);
-
-setTimeout(() => {
-
-securityLayer.remove();
-
-mainInterface.setAttribute(
-'aria-hidden',
-'false'
-);
-
-}, 600);
-
-}
-
-window.addEventListener(
-'load',
-() => {
-
-setTimeout(() => {
-
-if (!securityState.verified) {
-
-console.warn(
-'Waiting for verification'
-);
-
-}
-
-}, 5000);
-
-}
-);
-</script>
-
+    <!-- Security Layer - Neural Handshake -->
+    <div id="security-layer" class="security-overlay" role="dialog" aria-modal="true" aria-label="Security Verification">
+        <div class="security-content">
+            <h3 style="color: var(--neon-purple, #6c5ce7);">
+                🔒 NEURAL HANDSHAKE REQUIRED
+            </h3>
+            <p class="security-description">Verify your identity to access the satellite interface</p>
+            <div id="recaptcha-container" class="recaptcha-wrapper"></div>
+        </div>
+    </div>
+
+    <!-- Main Hologram Interface -->
+    <div class="hologram-container" id="main-interface" aria-hidden="true">
+        <!-- Header -->
+        <header class="main-header" role="banner">
+            <h1 class="glitch" data-text="HUOKAING THARA" aria-label="HUOKAING THARA">
+                HUOKAING THARA
+            </h1>
+            <p class="subtitle" role="status">
+                <span class="status-indicator">◈</span> 
+                SATELLITE INTERFACE: <strong>ACTIVE</strong>
+            </p>
+        </header>
+
+        <!-- Package Grid Section -->
+        <section id="package-grid" class="package-section" role="region" aria-label="ISP Packages">
+            <h2 class="section-title">Available Service Packages</h2>
+            
+            <!-- Package Cards will be loaded dynamically -->
+            <div class="packages-container" id="packages-container">
+                <div class="package-card loading">
+                    <div class="loading-animation">
+                        <span class="loading-dot"></span>
+                        <span class="loading-dot"></span>
+                        <span class="loading-dot"></span>
+                    </div>
+                    <p>Loading packages...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- IP Satellite Bank Panel -->
+        <div class="bank-panel" role="region" aria-label="IP Satellite Bank">
+            <h3 class="panel-title">
+                <span class="icon">🛰️</span>
+                IP SATELLITE BANK
+            </h3>
+            <div id="ip-display" class="ip-coordinates" role="status" aria-live="polite">
+                <span class="coordinate-label">COORDINATING...</span>
+                <span class="coordinate-value"></span>
+            </div>
+            <div class="bank-stats" id="bank-stats">
+                <div class="stat-item">
+                    <span class="stat-label">Active Nodes</span>
+                    <span class="stat-value" id="active-nodes">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Bandwidth</span>
+                    <span class="stat-value" id="total-bandwidth">0 GB/s</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Status</span>
+                    <span class="stat-value status-online" id="system-status">ONLINE</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="main-footer" role="contentinfo">
+            <p>© 2026 HUOKAING THARA | Future ISP</p>
+            <p class="location">📍 Phnom Penh, Cambodia</p>
+            <div class="footer-links">
+                <a href="#" class="footer-link">Terms</a>
+                <a href="#" class="footer-link">Privacy</a>
+                <a href="#" class="footer-link">Support</a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Load Scripts -->
+    <script src="script.js"></script>
+    <script src="script2.js"></script>
+    
+    <!-- Consolidated and secure script -->
+    <script>
+        // Security & Initialization
+        (function() {
+            'use strict';
+            
+            // Security state
+            const securityState = {
+                verified: false,
+                challengeId: null,
+                timestamp: null
+            };
+            
+            // Recaptcha callback
+            function onloadCallback() {
+                const recaptchaElement = document.getElementById('recaptcha-container');
+                
+                if (recaptchaElement) {
+                    window.google.recaptcha.init({
+                        sitekey: 'YOUR_SITE_KEY_HERE', // Replace with your actual site key
+                        callback: function(token) {
+                            handleVerification(token);
+                        },
+                        'error-callback': function() {
+                            console.error('Recaptcha error');
+                        }
+                    });
+                }
+            }
+            
+            // Handle verification
+            function handleVerification(token) {
+                console.log('Verification token received:', token);
+                
+                // Verify token with backend
+                verifyTokenWithBackend(token);
+            }
+            
+            // Verify token with backend
+            async function verifyTokenWithBackend(token) {
+                try {
+                    const response = await fetch('/api/verify-recaptcha', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({ token })
+                    });
+                    
+                    const result = await response.json();
+                    
+                    if (result.success) {
+                        securityState.verified = true;
+                        securityState.timestamp = new Date().toISOString();
+                        
+                        // Remove security overlay
+                        unlockInterface();
+                    } else {
+                        console.error('Verification failed:', result.message);
+                    }
+                } catch (error) {
+                    console.error('Verification error:', error);
+                }
+            }
+            
+            // Unlock interface
+            function unlockInterface() {
+                const securityLayer = document.getElementById('security-layer');
+                const mainInterface = document.getElementById('main-interface');
+                
+                if (securityLayer) {
+                    securityLayer.style.opacity = '0';
+                    securityLayer.style.pointerEvents = 'none';
+                    
+                    setTimeout(() => {
+                        securityLayer.style.display = 'none';
+                    }, 500);
+                }
+                
+                if (mainInterface) {
+                    mainInterface.setAttribute('aria-hidden', 'false');
+                }
+            }
+            
+            // Fallback if recaptcha doesn't load
+            setTimeout(() => {
+                if (!securityState.verified) {
+                    console.warn('Recaptcha not loaded, showing fallback');
+                    // You could add a fallback verification here
+                }
+            }, 5000);
+            
+        })();
+    </script>
 </body>
 </html>
