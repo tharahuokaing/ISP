@@ -1,32 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HUOKAING THARA | Future ISP</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="isp.png">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HUOKAING THARA | Future ISP</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="isp.png" type="image/png">
 </head>
 <body>
-    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
+  <!-- Google reCAPTCHA -->
+  <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
 
-    <div class="hologram-container">
-        <header>
-            <h1 class="glitch" data-text="HUOKAING THARA">HUOKAING THARA</h1>
-            <p class="subtitle">SATELLITE INTERFACE: ACTIVE</p>
-        </header>
+  <div class="hologram-container">
+    <header>
+      <h1 class="glitch" data-text="HUOKAING THARA">HUOKAING THARA</h1>
+      <p class="subtitle">SATELLITE INTERFACE: ACTIVE</p>
+    </header>
 
-        <section id="package-grid">
-            </section>
+    <main>
+      <!-- Package Grid Section -->
+      <section id="package-grid" aria-label="Available Packages">
+        <!-- Future ISP packages will be dynamically injected here -->
+      </section>
 
-        <div class="bank-panel">
-            <h3>IP SATELLITE BANK</h3>
-            <div id="ip-display">COORDINATING...</div>
-        </div>
-    </div>
-    <script src="script.js"></script>
-    <script src="script1.js"></script>
-    <script src="ultra_secure_mode.js"></script>
+      <!-- IP Satellite Bank Panel -->
+      <aside class="bank-panel" aria-label="IP Satellite Bank">
+        <h3>IP SATELLITE BANK</h3>
+        <div id="ip-display" role="status" aria-live="polite">COORDINATING...</div>
+      </aside>
+    </main>
+  </div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+  <script src="script1.js"></script>
+  <script src="ultra_secure_mode.js"></script>
 </body>
 </html>
