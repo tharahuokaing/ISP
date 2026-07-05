@@ -28,7 +28,7 @@ const packages = [
         price: "$39.99/mo",
         description: "Fiber to the Home broadband for basic internet usage.",
         features: ["Basic Support", "50 Devices", "Standard Speed"],
-        link: "https://tharahuokaing.github.io/%E1%9E%9F%E1%9E%B7%E1%9E%A2%E1%9E%B6%E1%9E%9A%E1%9F%92%E1%9E%99%E1%9E%98%E1%9F%81%E1%9E%8F%E1%9F%92%E1%9E%9A%E1%9E%B8.jpg"
+        link: "https://github.com/tharahuokaing/ISP/blob/main/%E1%9E%9F%E1%9E%B7%E1%9E%A2%E1%9E%B6%E1%9E%9A%E1%9F%92%E1%9E%99%E1%9E%98%E1%9F%81%E1%9E%8F%E1%9F%92%E1%9E%9A%E1%9E%B8.jpg?raw=true"
     },
     {
         name: "FTTH Plus",
@@ -37,7 +37,7 @@ const packages = [
         price: "$59.99/mo",
         description: "Higher speed fiber connection ideal for multiple users.",
         features: ["Priority Support", "200 Devices", "Enhanced Speed"],
-        link: "https://tharahuokaing.github.io/%E1%9E%9F%E1%9E%B7%E1%9E%A2%E1%9E%B6%E1%9E%9A%E1%9F%92%E1%9E%99%E1%9E%98%E1%9F%81%E1%9E%8F%E1%9F%92%E1%9E%9A%E1%9E%B8.jpg"
+        link: "https://github.com/tharahuokaing/ISP/blob/main/%E1%9E%9F%E1%9E%B7%E1%9E%A2%E1%9E%B6%E1%9E%9A%E1%9F%92%E1%9E%99%E1%9E%98%E1%9F%81%E1%9E%8F%E1%9F%92%E1%9E%9A%E1%9E%B8.jpg?raw=true"
     },
     {
         name: "PPPoE Standard",
@@ -46,7 +46,7 @@ const packages = [
         price: "$49.99/mo",
         description: "Standard PPPoE connection suitable for streaming and gaming.",
         features: ["Streaming Optimized", "Gaming Mode", "100 Devices"],
-        link: "https://tharahuokaing.github.io/%E1%9E%9F%E1%9E%B7%E1%9E%A2%E1%9E%B6%E1%9E%9A%E1%9F%92%E1%9E%99%E1%9E%98%E1%9F%81%E1%9E%8F%E1%9F%92%E1%9E%9A%E1%9E%B8.jpg"
+        link: "https://github.com/tharahuokaing/ISP/blob/main/%E1%9E%9F%E1%9E%B7%E1%9E%A2%E1%9E%B6%E1%9E%9A%E1%9F%92%E1%9E%99%E1%9E%98%E1%9F%81%E1%9E%8F%E1%9F%92%E1%9E%9A%E1%9E%B8.jpg?raw=true"
     },
     {
         name: "PPPoE Pro",
@@ -55,7 +55,7 @@ const packages = [
         price: "$79.99/mo",
         description: "Premium PPPoE with enhanced stability and speed.",
         features: ["Premium Support", "Unlimited Devices", "Pro Stability"],
-        link: "https://tharahuokaing.github.io/%E1%9E%9F%E1%9E%B7%E1%9E%A2%E1%9E%B6%E1%9E%9A%E1%9F%92%E1%9E%99%E1%9E%98%E1%9F%81%E1%9E%8F%E1%9F%92%E1%9E%9A%E1%9E%B8.jpg"
+        link: "https://github.com/tharahuokaing/ISP/blob/main/%E1%9E%9F%E1%9E%B7%E1%9E%A2%E1%9E%B6%E1%9E%9A%E1%9F%92%E1%9E%99%E1%9E%98%E1%9F%81%E1%9E%8F%E1%9F%92%E1%9E%9A%E1%9E%B8.jpg?raw=true"
     },
     {
         name: "DPLC Business",
@@ -64,7 +64,7 @@ const packages = [
         price: "$89.99/mo",
         description: "Dedicated point-to-point leased connection for businesses.",
         features: ["Business Support", "Dedicated Line", "99.9% Uptime"],
-        link: "https://tharahuokaing.github.io/%E1%9E%9F%E1%9E%B7%E1%9E%A2%E1%9E%B6%E1%9E%9A%E1%9F%92%E1%9E%99%E1%9E%98%E1%9F%81%E1%9E%8F%E1%9F%92%E1%9E%9A%E1%9E%B8.jpg"
+        link: "https://github.com/tharahuokaing/ISP/blob/main/%E1%9E%9F%E1%9E%B7%E1%9E%A2%E1%9E%B6%E1%9E%9A%E1%9F%92%E1%9E%99%E1%9E%98%E1%9F%81%E1%9E%8F%E1%9F%92%E1%9E%9A%E1%9E%B8.jpg?raw=true"
     },
     {
         name: "DPLC Enterprise",
@@ -73,7 +73,7 @@ const packages = [
         price: "$149.99/mo",
         description: "High-speed DPLC for large enterprises and data centers.",
         features: ["Enterprise Support", "Data Center Ready", "99.99% Uptime"],
-        link: "https://tharahuokaing.github.io/%E1%9E%9F%E1%9E%B7%E1%9E%A2%E1%9E%B6%E1%9E%9A%E1%9F%92%E1%9E%99%E1%9E%98%E1%9F%81%E1%9E%8F%E1%9F%92%E1%9E%9A%E1%9E%B8.jpg"
+        link: "https://github.com/tharahuokaing/ISP/blob/main/%E1%9E%9F%E1%9E%B7%E1%9E%A2%E1%9E%B6%E1%9E%9A%E1%9F%92%E1%9E%99%E1%9E%98%E1%9F%81%E1%9E%8F%E1%9F%92%E1%9E%9A%E1%9E%B8.jpg?raw=true"
     },
     {
         name: "IPLC Enterprise",
@@ -82,7 +82,7 @@ const packages = [
         price: "$199.99/mo",
         description: "International private leased circuit for enterprise use.",
         features: ["Global Access", "International Routes", "24/7 Support"],
-        link: "https://tharahuokaing.github.io/%E1%9E%9F%E1%9E%B7%E1%9E%A2%E1%9E%B6%E1%9E%9A%E1%9F%92%E1%9E%99%E1%9E%98%E1%9F%81%E1%9E%8F%E1%9F%92%E1%9E%9A%E1%9E%B8.jpg"
+        link: "https://github.com/tharahuokaing/ISP/blob/main/%E1%9E%9F%E1%9E%B7%E1%9E%A2%E1%9E%B6%E1%9E%9A%E1%9F%92%E1%9E%99%E1%9E%98%E1%9F%81%E1%9E%8F%E1%9F%92%E1%9E%9A%E1%9E%B8.jpg?raw=true"
     },
     {
         name: "Wireless LTE Basic",
@@ -91,7 +91,7 @@ const packages = [
         price: "$29.99/mo",
         description: "Wireless LTE connection ideal for mobile and rural users.",
         features: ["Mobile Ready", "Rural Coverage", "Basic Support"],
-        link: "https://tharahuokaing.github.io/%E1%9E%9F%E1%9E%B7%E1%9E%A2%E1%9E%B6%E1%9E%9A%E1%9F%92%E1%9E%99%E1%9E%98%E1%9F%81%E1%9E%8F%E1%9F%92%E1%9E%9A%E1%9E%B8.jpg"
+        link: "https://github.com/tharahuokaing/ISP/blob/main/%E1%9E%9F%E1%9E%B7%E1%9E%A2%E1%9E%B6%E1%9E%9A%E1%9F%92%E1%9E%99%E1%9E%98%E1%9F%81%E1%9E%8F%E1%9F%92%E1%9E%9A%E1%9E%B8.jpg?raw=true"
     },
     {
         name: "Wireless LTE Premium",
@@ -100,7 +100,7 @@ const packages = [
         price: "$59.99/mo",
         description: "Faster LTE plan optimized for streaming and gaming.",
         features: ["Streaming Optimized", "Gaming Mode", "Premium Support"],
-        link: "https://tharahuokaing.github.io/%E1%9E%9F%E1%9E%B7%E1%9E%A2%E1%9E%B6%E1%9E%9A%E1%9F%92%E1%9E%99%E1%9E%98%E1%9F%81%E1%9E%8F%E1%9F%92%E1%9E%9A%E1%9E%B8.jpg"
+        link: "https://github.com/tharahuokaing/ISP/blob/main/%E1%9E%9F%E1%9E%B7%E1%9E%A2%E1%9E%B6%E1%9E%9A%E1%9F%92%E1%9E%99%E1%9E%98%E1%9F%81%E1%9E%8F%E1%9F%92%E1%9E%9A%E1%9E%B8.jpg?raw=true"
     },
     {
         name: "6G Home Internet",
@@ -109,7 +109,7 @@ const packages = [
         price: "$0.00/mo",
         description: "Ultra-fast next-generation fixed wireless internet for home use.",
         features: ["Next-Gen 6G", "Unlimited Data", "Future Ready"],
-        link: "https://tharahuokaing.github.io/%E1%9E%9F%E1%9E%B7%E1%9E%A2%E1%9E%B6%E1%9E%9A%E1%9F%92%E1%9E%99%E1%9E%98%E1%9F%81%E1%9E%8F%E1%9F%92%E1%9E%9A%E1%9E%B8.jpg"
+        link: "https://github.com/tharahuokaing/ISP/blob/main/%E1%9E%9F%E1%9E%B7%E1%9E%A2%E1%9E%B6%E1%9E%9A%E1%9F%92%E1%9E%99%E1%9E%98%E1%9F%81%E1%9E%8F%E1%9F%92%E1%9E%9A%E1%9E%B8.jpg?raw=true"
     }
 ];
 
